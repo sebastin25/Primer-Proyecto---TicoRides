@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TicoRides</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+
+</head>
+
+
+
+<body>
+
+
+    <header class="row">
+
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="registro.html">Registro</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+
+        <div class="col s12 offset-s2">
+            <img src="img/carpooling.jpg" alt="logo webpage" id="header-image">
+        </div>
+        <h1 class="main-title">Welcome to TicoRides.com</h1>
+    </header>
+
+    <div class="row">
+        <div class="col s12">
+
+            <h4>Search for a ride</h4>
+            <table id="buscador">
+                <tr>
+                    <td>
+                        <label> From: </label>
+                         <input id="autocomplete" placeholder="Enter your address" type="text"></input>     
+                    </td>
+                    
+                    <td>
+                        <label> To: </label>
+                         <input id="autocomplete2" placeholder="Enter your address" type="text"></input>       
+
+                    </td>
+                    <td>
+                        <button class="btn waves-effect waves-light" type="submit" name="action"><i class="small material-icons">search</i>
+                        </button>
+                    </td>
+                </tr>
+
+            </table>
+
+
+        </div>
+    </div>
+
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?&libraries=places&callback=initAutocomplete"
+        async defer></script>
+    <script src="js/gmap.js"></script>
+
+</body>
+
+</html>
