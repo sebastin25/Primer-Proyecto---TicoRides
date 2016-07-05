@@ -3,6 +3,9 @@
     width: 25%;
     height: auto;
     display: block;
+    margin-left: 82px;
+    margin-top: auto;
+    margin-top: 30px;
 }
 
 .main-title {
@@ -11,39 +14,23 @@
     font-style: italic;
 }
 
-.titles {
-    font-weight: bold;
-    font-size: 20px;
-}
-
-
-#sidebar {
-    position: relative;
-    box-shadow: 0 2px 10px #757575;
-    padding: 10px;
-}
-
-#sidebar-image {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    position: relative;
-    top: -20px;
-    z-index: 1;
-}
-
-
-.lista li {
-    list-style: circle inside;
-    list-style-type: disc;
-}
-
-#buscador{
+#buscador {
     border: 2px solid #D4E2F1;
 }
 
-#buscador table{
+#buscador label {
     font-size: 30px;
+}
+
+.brand-logo {
+    margin-left: 70px;
+}
+
+#search-icon {
+    margin-right: 10px;
+}
+
+#modal1 li {
+    list-style: circle inside;
+    list-style-type: disc;
 }

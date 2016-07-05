@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>TicoRides</title>
@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="js/jquery-3.0.0.min.js"></script>
     <script src="js/materialize.min.js"></script>
+    <script src="js/table.js"></script>
 
 </head>
 
@@ -22,7 +23,7 @@
         <div class="navbar-fixed">
             <nav>
                 <div class="nav-wrapper">
-
+                    <a href="index.html" class="brand-logo">TicoRides</a>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="login.html">Login</a></li>
                         <li><a href="registro.html">Registro</a></li>
@@ -31,11 +32,10 @@
             </nav>
         </div>
 
-
-        <div class="col s12 offset-s2">
+        <div class="col s8 offset-s4">
             <img src="img/carpooling.jpg" alt="logo webpage" id="header-image">
+            <h1 class="main-title">Welcome to TicoRides.com</h1>
         </div>
-        <h1 class="main-title">Welcome to TicoRides.com</h1>
     </header>
 
     <div class="row">
@@ -46,16 +46,16 @@
                 <tr>
                     <td>
                         <label> From: </label>
-                         <input id="autocomplete" placeholder="Enter your address" type="text"></input>     
+                        <input id="autocomplete" placeholder="Enter your address" type="text" />
                     </td>
-                    
+
                     <td>
                         <label> To: </label>
-                         <input id="autocomplete2" placeholder="Enter your address" type="text"></input>       
+                        <input id="autocomplete2" placeholder="Enter your address" type="text" />
 
                     </td>
                     <td>
-                        <button class="btn waves-effect waves-light" type="submit" name="action"><i class="small material-icons">search</i>
+                        <button class="btn waves-effect waves-light" type="submit" name="action" onclick="addRow()"><i class="small material-icons" id="search-icon">search</i>Find my Ride!
                         </button>
                     </td>
                 </tr>
@@ -64,12 +64,50 @@
 
 
         </div>
+        <div class="col s12">
+            <table class="striped">
+                <thead>
+                    <tr>
+                        <th><b>User</b></th>
+                        <th><b>Start</b></th>
+                        <th><b>End</b></th>
+                        <th>&nbsp;</th>
+                    </tr>
+                </thead>
+                <tbody id="myTableData">
+                </tbody>
+            </table>
+        </div>
     </div>
 
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+
+            <ul>
+                <li>Start from: <span>San Jose, San José, Costa Rica</span></li>
+                <li>End: <span>Alajuela - La Guacima, Alajuela, Costa Rica</span></li>
+                <li>Description: <span>From Pali on San Jose to the park on Alajuela </span></li>
+                <br>
+                <li>Departure: <span> 7:00 am</span></li>
+                <li>Estimated Arrival: <span> 8:00 am</span></li>
+
+                <br>
+                <br>
+                <ul>Days
+                    <li>Monday</li>
+                    <li>Thursday</li>
+                    <li>Sunday</li>
+                </ul>
+            </ul>
 
 
-    <script src="https://maps.googleapis.com/maps/api/js?&libraries=places&callback=initAutocomplete"
-        async defer></script>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?&libraries=places&callback=initAutocomplete" async defer></script>
     <script src="js/gmap.js"></script>
 
 </body>
