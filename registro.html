@@ -34,34 +34,53 @@
 
         <div class="col s8 offset-s4">
             <img src="img/carpooling.jpg" alt="logo webpage" id="header-image">
-            <h1 class="main-title">Welcome to TicoRides.com</h1>
+            
         </div>
     </header>
 
     <div class="container">
         <div class="row">
             <form class="col s4 offset-s3">
-                <div class="row">
-                    <div class="input-field">
-                        <i class="material-icons prefix">account_circle</i>
-                        <input id="icon_prefix" type="text" class="validate">
-                        <label for="icon_prefix">Username</label>
-                    </div>
-                    <div class="input-field">
-                        <i class="material-icons prefix">vpn_key</i>
-                        <input id="icon_telephone" type="tel" class="validate">
-                        <label for="icon_telephone">Password</label>
-                    </div>
 
-                    <br>
-                    <div>
-                        Already an user? <a href="login.html">&nbsp;Login here</a>
-                    </div>
-                    <br>
-                    <a class="waves-effect waves-light btn" href="index.html">Register</a>
+                <div class="input-field">
+                    <input id="first_name" type="text" class="validate">
+                    <label for="first_name">First Name</label>
                 </div>
-            </form>
+
+                <div class="input-field">
+                    <input id="last_name" type="text" class="validate">
+                    <label for="last_name">Last Name</label>
+                </div>
+
+                <div class="input-field">
+                    <input placeholder="xxxx-xxxx" id="phone" class="validate" type='tel' pattern='\d{4}[\-]\d{4}' title='Phone Number (Format: 9999-9999)'>
+                    <label for="first_name">Phone</label>
+                </div>
+
+                <div class="input-field">
+                    <input id="username" type="text" class="validate">
+                    <label for="username">Username</label>
+                </div>
+
+                <div class="input-field">
+                    <input id="password" type="password" class="validate">
+                    <label for="password">Password</label>
+                </div>
+
+                <div class="input-field">
+                    <input id="cpassword" type="password" class="validate">
+                    <label for="repeat-password">Repeat Password</label>
+                </div>
+
+                <br>
+                <div>
+                    Already an user? <a href="login.html">&nbsp;Login here</a>
+                </div>
+                <br>
+                <a class="waves-effect waves-light btn" href="index.html">Register</a>
         </div>
+        </form>
+    </div>
     </div>
 </body>
 
