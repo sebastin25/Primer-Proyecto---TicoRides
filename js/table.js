@@ -1,7 +1,7 @@
 var direcciones = [
-    ["Pepito2016", "San Jose, San José, Costa Rica", "Alajuela - La Guacima, Alajuela, Costa Rica"],
+    ["Pepito2015", "San Jose, San José, Costa Rica", "Alajuela - La Guacima, Alajuela, Costa Rica"],
     ["Pepito2015", "Alajuela - La Guacima, Alajuela, Costa Rica", "San Jose, San José, Costa Rica"],
-    ["Pepito2014", "San Josecito, Heredia Province, Costa Rica", "Calle El Progreso, Heredia, Costa Rica"]
+    ["Pepito2015", "San Josecito, Heredia Province, Costa Rica", "Calle El Progreso, Heredia, Costa Rica"]
 ];
 
 
@@ -22,4 +22,5 @@ function addRow() {
             });
         }
     }
+    
 }

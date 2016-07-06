@@ -4,8 +4,16 @@
     height: auto;
     display: block;
     margin-left: 82px;
-    margin-top: auto;
     margin-top: 30px;
+}
+
+#user-image {
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+    display: block;
+    padding: 6px;
+    float: right;
 }
 
 .main-title {
@@ -33,4 +41,31 @@
 #modal1 li {
     list-style: circle inside;
     list-style-type: disc;
+}
+
+#breadcrumb,
+.breadcrumb,
+.breadcrumb::before , #menu{
+    background-color: transparent;
+    color: black !important;
+    box-shadow: 0px 0px 0px #ffffff !important;
+}
+
+#menu a {
+   transition: background-color .3s;
+    color: black !important;
+    background-color: gray;
+    border: 1px solid #514b4b;
+}
+
+
+#menu #active a{
+    background-color: white;
+}
+#menu a:hover {
+  background-color: #a79c81;
+}
+
+.rides{
+     border: 2px solid #D4E2F1;
 }
